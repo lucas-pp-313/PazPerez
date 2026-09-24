@@ -33,6 +33,21 @@ const app = (() => {
     'Reformas y muebles a medida': 'Renovations and custom furniture',
     'Logo de Paz Pérez': 'Paz Pérez logo',
     'Ir al inicio': 'Go to home',
+    'Paz Pérez': 'Paz Pérez',
+    'English': 'English',
+    'Instagram': 'Instagram',
+    'WhatsApp:': 'WhatsApp:',
+    'paz.perez.contacto@gmail.com': 'paz.perez.contacto@gmail.com',
+    '+54 11 6782-7080': '+54 11 6782-7080',
+    'Completá el formulario para enviarnos tu consulta. Consultá cómo trataremos tus datos en nuestra': 'Complete the form to send us your enquiry. See how we handle your information in our',
+    'Formulario de consulta de Paz Pérez en Google Forms': 'Paz Pérez enquiry form on Google Forms',
+    'Cargando el formulario de consulta…': 'Loading the enquiry form…',
+    'Horario de atención: Lunes a viernes de 9:00 a 18:00': 'Business hours: Monday to Friday, 9:00 am to 6:00 pm',
+    'Redes sociales:': 'Social media:',
+    'Teléfono:': 'Phone:',
+    'Ubicación: Ciudad Autónoma de Buenos Aires': 'Location: Autonomous City of Buenos Aires',
+    'Fabricamos muebles personalizados con diseños pensados para aprovechar cada espacio y facilitar el orden diario.': 'We build custom furniture designed to make the most of every space and keep things organized.',
+    'Transformamos cocinas, baños y viviendas completas con planificación, gestión de obra y acabados premium.': 'We transform kitchens, bathrooms and entire homes with careful planning, project management and premium finishes.',
     'Navegación principal': 'Main navigation',
     'Navegación móvil': 'Mobile navigation',
     'Ambiente de comedor con mobiliario de madera, imagen de referencia': 'Dining area with wood furniture, reference image',
@@ -246,8 +261,8 @@ const app = (() => {
       }
     }
 
-    document.querySelectorAll('[alt], [aria-label], [placeholder], option').forEach((element) => {
-      ['alt', 'aria-label', 'placeholder'].forEach((attribute) => {
+    document.querySelectorAll('[alt], [aria-label], [placeholder], [title], option').forEach((element) => {
+      ['alt', 'aria-label', 'placeholder', 'title'].forEach((attribute) => {
         const value = element.getAttribute(attribute);
         if (value && translations[value]) element.setAttribute(attribute, translations[value]);
       });
