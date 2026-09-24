@@ -32,6 +32,7 @@ const app = (() => {
     'PAZ PÉREZ AMOBLAMIENTOS': 'PAZ PÉREZ FURNISHINGS',
     'Reformas y muebles a medida': 'Renovations and custom furniture',
     'Logo de Paz Pérez': 'Paz Pérez logo',
+    'Ir al inicio': 'Go to home',
     'Navegación principal': 'Main navigation',
     'Navegación móvil': 'Mobile navigation',
     'Ambiente de comedor con mobiliario de madera, imagen de referencia': 'Dining area with wood furniture, reference image',
