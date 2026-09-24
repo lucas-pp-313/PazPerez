@@ -752,6 +752,21 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .contact-form label.privacy-consent input[type="checkbox"] { flex: 0 0 1.15rem; width: 1.15rem; height: 1.15rem; margin-top: 0.2rem; }
 .contact-form label.privacy-consent span { min-width: 0; line-height: 1.55; }
 .contact-form label.privacy-consent a { display: inline; white-space: normal; }
+.google-form-embed {
+    width: 100%;
+    min-height: 1050px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--surface);
+}
+.google-form-embed iframe {
+    display: block;
+    width: 100%;
+    height: 1050px;
+    border: 0;
+    background: var(--surface);
+}
 .contact-form button:disabled { opacity: 0.72; cursor: wait; }
 .form-note { line-height: 1.55; }
 .site-footer { margin-top: 2rem; }
@@ -989,5 +1004,6 @@ body.settings-open { overflow: hidden; }
 }
 @media (max-width: 560px) {
     .page-content > .service-grid { grid-template-columns: 1fr; }
+    .google-form-embed, .google-form-embed iframe { min-height: 1180px; height: 1180px; }
 }
 
