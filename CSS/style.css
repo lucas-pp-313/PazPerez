@@ -727,6 +727,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .branding { min-width: 0; }
 .branding h1 { font-size: clamp(1.15rem, 2vw, 1.65rem); line-height: 1.2; }
 .branding .eyebrow { font-size: 0.68rem; letter-spacing: 0.1em; }
+.branding .brand-name { margin: 0; color: var(--text); font-family: 'Merriweather', serif; font-size: 1.2rem; font-weight: 700; }
 .main-nav ul { gap: 0.25rem; }
 .main-nav a { padding: 0.65rem 0.8rem; font-size: 0.92rem; }
 .nav-toggle { margin-left: auto; border-radius: 12px; }
@@ -979,5 +980,14 @@ body.settings-open { overflow: hidden; }
     .branding { min-width: 0; flex: initial; }
     .nav-toggle { grid-column: 2; grid-row: 1; justify-self: end; margin: 0; }
     .settings-trigger { grid-column: 3; grid-row: 1; justify-self: end; margin: 0; }
+}
+
+/* Reparte en tres columnas las tarjetas de servicios y centra cada fila. */
+.page-content > .service-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 860px) {
+    .page-content > .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+    .page-content > .service-grid { grid-template-columns: 1fr; }
 }
 
